@@ -69,6 +69,23 @@
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.richTb = new System.Windows.Forms.RichTextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.splitContainer3 = new System.Windows.Forms.SplitContainer();
+            this.inventoryListView = new System.Windows.Forms.ListView();
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.materialLabel15 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel17 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel18 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel19 = new MaterialSkin.Controls.MaterialLabel();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.partNameLbl = new MaterialSkin.Controls.MaterialLabel();
+            this.partNumLbl = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel16 = new MaterialSkin.Controls.MaterialLabel();
+            this.itemIDLbl = new MaterialSkin.Controls.MaterialLabel();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.materialRaisedButton5 = new MaterialSkin.Controls.MaterialRaisedButton();
@@ -91,18 +108,7 @@
             this.materialLabel8 = new MaterialSkin.Controls.MaterialLabel();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
-            this.splitContainer3 = new System.Windows.Forms.SplitContainer();
-            this.inventoryListView = new System.Windows.Forms.ListView();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.itemIDLbl = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel16 = new MaterialSkin.Controls.MaterialLabel();
-            this.partNumLbl = new MaterialSkin.Controls.MaterialLabel();
-            this.partNameLbl = new MaterialSkin.Controls.MaterialLabel();
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.menuStrip1.SuspendLayout();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -113,6 +119,12 @@
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).BeginInit();
+            this.splitContainer3.Panel1.SuspendLayout();
+            this.splitContainer3.Panel2.SuspendLayout();
+            this.splitContainer3.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -121,11 +133,6 @@
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.aspenPicture)).BeginInit();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).BeginInit();
-            this.splitContainer3.Panel1.SuspendLayout();
-            this.splitContainer3.Panel2.SuspendLayout();
-            this.splitContainer3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -224,6 +231,7 @@
             // splitContainer2.Panel2
             // 
             this.splitContainer2.Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(90)))), ((int)(((byte)(100)))));
+            this.splitContainer2.Panel2.Controls.Add(this.materialRaisedButton1);
             this.splitContainer2.Panel2.Controls.Add(this.materialLabel14);
             this.splitContainer2.Panel2.Controls.Add(this.materialLabel13);
             this.splitContainer2.Panel2.Controls.Add(this.comboBox2);
@@ -620,6 +628,207 @@
             this.tabPage2.Text = "Inventory";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // splitContainer3
+            // 
+            this.splitContainer3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer3.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer3.Name = "splitContainer3";
+            this.splitContainer3.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer3.Panel1
+            // 
+            this.splitContainer3.Panel1.Controls.Add(this.inventoryListView);
+            // 
+            // splitContainer3.Panel2
+            // 
+            this.splitContainer3.Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+            this.splitContainer3.Panel2.Controls.Add(this.groupBox5);
+            this.splitContainer3.Panel2.Controls.Add(this.groupBox4);
+            this.splitContainer3.Size = new System.Drawing.Size(1071, 471);
+            this.splitContainer3.SplitterDistance = 231;
+            this.splitContainer3.TabIndex = 0;
+            // 
+            // inventoryListView
+            // 
+            this.inventoryListView.AllowColumnReorder = true;
+            this.inventoryListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader5,
+            this.columnHeader6,
+            this.columnHeader7,
+            this.columnHeader8,
+            this.columnHeader9});
+            this.inventoryListView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.inventoryListView.FullRowSelect = true;
+            this.inventoryListView.Location = new System.Drawing.Point(0, 0);
+            this.inventoryListView.MultiSelect = false;
+            this.inventoryListView.Name = "inventoryListView";
+            this.inventoryListView.Size = new System.Drawing.Size(1071, 231);
+            this.inventoryListView.TabIndex = 0;
+            this.inventoryListView.UseCompatibleStateImageBehavior = false;
+            this.inventoryListView.View = System.Windows.Forms.View.Details;
+            this.inventoryListView.SelectedIndexChanged += new System.EventHandler(this.inventoryListView_SelectedIndexChanged);
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Part #";
+            this.columnHeader5.Width = 50;
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "Part Name";
+            this.columnHeader6.Width = 126;
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "Part Descript";
+            this.columnHeader7.Width = 609;
+            // 
+            // columnHeader8
+            // 
+            this.columnHeader8.Text = "Part Quantity";
+            this.columnHeader8.Width = 95;
+            // 
+            // columnHeader9
+            // 
+            this.columnHeader9.Text = "Part Cost";
+            this.columnHeader9.Width = 186;
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(90)))), ((int)(((byte)(100)))));
+            this.groupBox5.Controls.Add(this.materialLabel15);
+            this.groupBox5.Controls.Add(this.materialLabel17);
+            this.groupBox5.Controls.Add(this.materialLabel18);
+            this.groupBox5.Controls.Add(this.materialLabel19);
+            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.groupBox5.Location = new System.Drawing.Point(8, 128);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(236, 100);
+            this.groupBox5.TabIndex = 4;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Item Info:";
+            // 
+            // materialLabel15
+            // 
+            this.materialLabel15.AutoSize = true;
+            this.materialLabel15.Depth = 0;
+            this.materialLabel15.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel15.Location = new System.Drawing.Point(114, 70);
+            this.materialLabel15.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel15.Name = "materialLabel15";
+            this.materialLabel15.Size = new System.Drawing.Size(116, 19);
+            this.materialLabel15.TabIndex = 3;
+            this.materialLabel15.Text = "materialLabel15";
+            // 
+            // materialLabel17
+            // 
+            this.materialLabel17.AutoSize = true;
+            this.materialLabel17.Depth = 0;
+            this.materialLabel17.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel17.Location = new System.Drawing.Point(114, 37);
+            this.materialLabel17.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel17.Name = "materialLabel17";
+            this.materialLabel17.Size = new System.Drawing.Size(116, 19);
+            this.materialLabel17.TabIndex = 2;
+            this.materialLabel17.Text = "materialLabel15";
+            // 
+            // materialLabel18
+            // 
+            this.materialLabel18.AutoSize = true;
+            this.materialLabel18.Depth = 0;
+            this.materialLabel18.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel18.Location = new System.Drawing.Point(6, 70);
+            this.materialLabel18.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel18.Name = "materialLabel18";
+            this.materialLabel18.Size = new System.Drawing.Size(84, 19);
+            this.materialLabel18.TabIndex = 1;
+            this.materialLabel18.Text = "Part Name:";
+            // 
+            // materialLabel19
+            // 
+            this.materialLabel19.AutoSize = true;
+            this.materialLabel19.Depth = 0;
+            this.materialLabel19.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel19.Location = new System.Drawing.Point(6, 37);
+            this.materialLabel19.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel19.Name = "materialLabel19";
+            this.materialLabel19.Size = new System.Drawing.Size(53, 19);
+            this.materialLabel19.TabIndex = 0;
+            this.materialLabel19.Text = "Part #:";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(90)))), ((int)(((byte)(100)))));
+            this.groupBox4.Controls.Add(this.partNameLbl);
+            this.groupBox4.Controls.Add(this.partNumLbl);
+            this.groupBox4.Controls.Add(this.materialLabel16);
+            this.groupBox4.Controls.Add(this.itemIDLbl);
+            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.groupBox4.Location = new System.Drawing.Point(8, 18);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(236, 100);
+            this.groupBox4.TabIndex = 0;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Item Info:";
+            // 
+            // partNameLbl
+            // 
+            this.partNameLbl.AutoSize = true;
+            this.partNameLbl.Depth = 0;
+            this.partNameLbl.Font = new System.Drawing.Font("Roboto", 11F);
+            this.partNameLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.partNameLbl.Location = new System.Drawing.Point(114, 70);
+            this.partNameLbl.MouseState = MaterialSkin.MouseState.HOVER;
+            this.partNameLbl.Name = "partNameLbl";
+            this.partNameLbl.Size = new System.Drawing.Size(116, 19);
+            this.partNameLbl.TabIndex = 3;
+            this.partNameLbl.Text = "materialLabel15";
+            // 
+            // partNumLbl
+            // 
+            this.partNumLbl.AutoSize = true;
+            this.partNumLbl.Depth = 0;
+            this.partNumLbl.Font = new System.Drawing.Font("Roboto", 11F);
+            this.partNumLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.partNumLbl.Location = new System.Drawing.Point(114, 37);
+            this.partNumLbl.MouseState = MaterialSkin.MouseState.HOVER;
+            this.partNumLbl.Name = "partNumLbl";
+            this.partNumLbl.Size = new System.Drawing.Size(116, 19);
+            this.partNumLbl.TabIndex = 2;
+            this.partNumLbl.Text = "materialLabel15";
+            // 
+            // materialLabel16
+            // 
+            this.materialLabel16.AutoSize = true;
+            this.materialLabel16.Depth = 0;
+            this.materialLabel16.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel16.Location = new System.Drawing.Point(6, 70);
+            this.materialLabel16.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel16.Name = "materialLabel16";
+            this.materialLabel16.Size = new System.Drawing.Size(84, 19);
+            this.materialLabel16.TabIndex = 1;
+            this.materialLabel16.Text = "Part Name:";
+            // 
+            // itemIDLbl
+            // 
+            this.itemIDLbl.AutoSize = true;
+            this.itemIDLbl.Depth = 0;
+            this.itemIDLbl.Font = new System.Drawing.Font("Roboto", 11F);
+            this.itemIDLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.itemIDLbl.Location = new System.Drawing.Point(6, 37);
+            this.itemIDLbl.MouseState = MaterialSkin.MouseState.HOVER;
+            this.itemIDLbl.Name = "itemIDLbl";
+            this.itemIDLbl.Size = new System.Drawing.Size(53, 19);
+            this.itemIDLbl.TabIndex = 0;
+            this.itemIDLbl.Text = "Part #:";
+            // 
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.splitContainer1);
@@ -913,136 +1122,18 @@
             this.materialTabSelector1.TabIndex = 1;
             this.materialTabSelector1.Text = "materialTabSelector1";
             // 
-            // splitContainer3
+            // materialRaisedButton1
             // 
-            this.splitContainer3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer3.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer3.Name = "splitContainer3";
-            this.splitContainer3.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            // 
-            // splitContainer3.Panel1
-            // 
-            this.splitContainer3.Panel1.Controls.Add(this.inventoryListView);
-            // 
-            // splitContainer3.Panel2
-            // 
-            this.splitContainer3.Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
-            this.splitContainer3.Panel2.Controls.Add(this.groupBox4);
-            this.splitContainer3.Size = new System.Drawing.Size(1071, 471);
-            this.splitContainer3.SplitterDistance = 232;
-            this.splitContainer3.TabIndex = 0;
-            // 
-            // inventoryListView
-            // 
-            this.inventoryListView.AllowColumnReorder = true;
-            this.inventoryListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader5,
-            this.columnHeader6,
-            this.columnHeader7,
-            this.columnHeader8,
-            this.columnHeader9});
-            this.inventoryListView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.inventoryListView.FullRowSelect = true;
-            this.inventoryListView.Location = new System.Drawing.Point(0, 0);
-            this.inventoryListView.MultiSelect = false;
-            this.inventoryListView.Name = "inventoryListView";
-            this.inventoryListView.Size = new System.Drawing.Size(1071, 232);
-            this.inventoryListView.TabIndex = 0;
-            this.inventoryListView.UseCompatibleStateImageBehavior = false;
-            this.inventoryListView.View = System.Windows.Forms.View.Details;
-            this.inventoryListView.SelectedIndexChanged += new System.EventHandler(this.inventoryListView_SelectedIndexChanged);
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(90)))), ((int)(((byte)(100)))));
-            this.groupBox4.Controls.Add(this.partNameLbl);
-            this.groupBox4.Controls.Add(this.partNumLbl);
-            this.groupBox4.Controls.Add(this.materialLabel16);
-            this.groupBox4.Controls.Add(this.itemIDLbl);
-            this.groupBox4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.groupBox4.Location = new System.Drawing.Point(8, 18);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(236, 100);
-            this.groupBox4.TabIndex = 0;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Item Info:";
-            // 
-            // itemIDLbl
-            // 
-            this.itemIDLbl.AutoSize = true;
-            this.itemIDLbl.Depth = 0;
-            this.itemIDLbl.Font = new System.Drawing.Font("Roboto", 11F);
-            this.itemIDLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.itemIDLbl.Location = new System.Drawing.Point(6, 37);
-            this.itemIDLbl.MouseState = MaterialSkin.MouseState.HOVER;
-            this.itemIDLbl.Name = "itemIDLbl";
-            this.itemIDLbl.Size = new System.Drawing.Size(53, 19);
-            this.itemIDLbl.TabIndex = 0;
-            this.itemIDLbl.Text = "Part #:";
-            // 
-            // materialLabel16
-            // 
-            this.materialLabel16.AutoSize = true;
-            this.materialLabel16.Depth = 0;
-            this.materialLabel16.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel16.Location = new System.Drawing.Point(6, 70);
-            this.materialLabel16.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel16.Name = "materialLabel16";
-            this.materialLabel16.Size = new System.Drawing.Size(84, 19);
-            this.materialLabel16.TabIndex = 1;
-            this.materialLabel16.Text = "Part Name:";
-            // 
-            // partNumLbl
-            // 
-            this.partNumLbl.AutoSize = true;
-            this.partNumLbl.Depth = 0;
-            this.partNumLbl.Font = new System.Drawing.Font("Roboto", 11F);
-            this.partNumLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.partNumLbl.Location = new System.Drawing.Point(114, 37);
-            this.partNumLbl.MouseState = MaterialSkin.MouseState.HOVER;
-            this.partNumLbl.Name = "partNumLbl";
-            this.partNumLbl.Size = new System.Drawing.Size(116, 19);
-            this.partNumLbl.TabIndex = 2;
-            this.partNumLbl.Text = "materialLabel15";
-            // 
-            // partNameLbl
-            // 
-            this.partNameLbl.AutoSize = true;
-            this.partNameLbl.Depth = 0;
-            this.partNameLbl.Font = new System.Drawing.Font("Roboto", 11F);
-            this.partNameLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.partNameLbl.Location = new System.Drawing.Point(114, 70);
-            this.partNameLbl.MouseState = MaterialSkin.MouseState.HOVER;
-            this.partNameLbl.Name = "partNameLbl";
-            this.partNameLbl.Size = new System.Drawing.Size(116, 19);
-            this.partNameLbl.TabIndex = 3;
-            this.partNameLbl.Text = "materialLabel15";
-            // 
-            // columnHeader5
-            // 
-            this.columnHeader5.Text = "Part #";
-            this.columnHeader5.Width = 50;
-            // 
-            // columnHeader6
-            // 
-            this.columnHeader6.Text = "Part Name";
-            this.columnHeader6.Width = 126;
-            // 
-            // columnHeader7
-            // 
-            this.columnHeader7.Text = "Part Descript";
-            this.columnHeader7.Width = 609;
-            // 
-            // columnHeader8
-            // 
-            this.columnHeader8.Text = "Part Quantity";
-            this.columnHeader8.Width = 95;
-            // 
-            // columnHeader9
-            // 
-            this.columnHeader9.Text = "Part Cost";
-            this.columnHeader9.Width = 186;
+            this.materialRaisedButton1.Depth = 0;
+            this.materialRaisedButton1.Location = new System.Drawing.Point(183, 409);
+            this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton1.Name = "materialRaisedButton1";
+            this.materialRaisedButton1.Primary = true;
+            this.materialRaisedButton1.Size = new System.Drawing.Size(115, 37);
+            this.materialRaisedButton1.TabIndex = 20;
+            this.materialRaisedButton1.Text = "Open Weekly Invoice";
+            this.materialRaisedButton1.UseVisualStyleBackColor = true;
+            this.materialRaisedButton1.Click += new System.EventHandler(this.materialRaisedButton1_Click);
             // 
             // SSHomeRestore
             // 
@@ -1071,6 +1162,14 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
+            this.splitContainer3.Panel1.ResumeLayout(false);
+            this.splitContainer3.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).EndInit();
+            this.splitContainer3.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
@@ -1080,12 +1179,6 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.aspenPicture)).EndInit();
             this.groupBox3.ResumeLayout(false);
-            this.splitContainer3.Panel1.ResumeLayout(false);
-            this.splitContainer3.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).EndInit();
-            this.splitContainer3.ResumeLayout(false);
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1167,6 +1260,12 @@
         private System.Windows.Forms.ColumnHeader columnHeader7;
         private System.Windows.Forms.ColumnHeader columnHeader8;
         private System.Windows.Forms.ColumnHeader columnHeader9;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private MaterialSkin.Controls.MaterialLabel materialLabel15;
+        private MaterialSkin.Controls.MaterialLabel materialLabel17;
+        private MaterialSkin.Controls.MaterialLabel materialLabel18;
+        private MaterialSkin.Controls.MaterialLabel materialLabel19;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
     }
 }
 

@@ -538,5 +538,11 @@ namespace SSHomeRestoration
                     }
                 }
         }
+
+        private void materialRaisedButton1_Click(object sender, EventArgs e)
+        {
+            WeeklyInvoiceGenerator wiG = new WeeklyInvoiceGenerator();
+            wiG.Show();
+        }
     }
 }
