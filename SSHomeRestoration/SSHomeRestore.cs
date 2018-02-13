@@ -86,7 +86,6 @@ namespace SSHomeRestoration
                         {
                             while (rdr.Read())
                             {
-                                MessageBox.Show(rdr[1].ToString());
                                 var listViewItem = new ListViewItem(rdr[1].ToString())
                                 {
                                     Tag = rdr[1]

@@ -33,28 +33,21 @@
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.weeklyInvoiceView = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.invoicesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.invoicesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.workOrderNumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.accountNumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bankIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.streetNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cityNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.stateNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.zipCodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.workCompletedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dateAddedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.invInfoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.addressDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.invoicesBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.invoicesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -78,139 +71,74 @@
             // closeToolStripMenuItem
             // 
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            this.closeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.closeToolStripMenuItem.Text = "Close";
             this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
             // 
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 105);
+            this.splitContainer1.Location = new System.Drawing.Point(0, 156);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.listView1);
+            this.splitContainer1.Panel1.Controls.Add(this.weeklyInvoiceView);
             // 
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.dataGridView1);
-            this.splitContainer1.Size = new System.Drawing.Size(1115, 522);
+            this.splitContainer1.Size = new System.Drawing.Size(1115, 471);
             this.splitContainer1.SplitterDistance = 371;
             this.splitContainer1.TabIndex = 1;
             // 
-            // listView1
+            // weeklyInvoiceView
             // 
-            this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listView1.FullRowSelect = true;
-            this.listView1.GridLines = true;
-            this.listView1.Location = new System.Drawing.Point(0, 0);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(371, 522);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.weeklyInvoiceView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3});
+            this.weeklyInvoiceView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.weeklyInvoiceView.FullRowSelect = true;
+            this.weeklyInvoiceView.GridLines = true;
+            this.weeklyInvoiceView.Location = new System.Drawing.Point(0, 0);
+            this.weeklyInvoiceView.Name = "weeklyInvoiceView";
+            this.weeklyInvoiceView.Size = new System.Drawing.Size(371, 471);
+            this.weeklyInvoiceView.TabIndex = 0;
+            this.weeklyInvoiceView.UseCompatibleStateImageBehavior = false;
+            this.weeklyInvoiceView.View = System.Windows.Forms.View.Details;
+            this.weeklyInvoiceView.SelectedIndexChanged += new System.EventHandler(this.weeklyInvoiceView_SelectedIndexChanged);
             // 
-            // dataGridView1
+            // columnHeader1
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.workOrderNumDataGridViewTextBoxColumn,
-            this.accountNumDataGridViewTextBoxColumn,
-            this.bankIDDataGridViewTextBoxColumn,
-            this.streetNameDataGridViewTextBoxColumn,
-            this.cityNameDataGridViewTextBoxColumn,
-            this.stateNameDataGridViewTextBoxColumn,
-            this.zipCodeDataGridViewTextBoxColumn,
-            this.workCompletedDataGridViewTextBoxColumn,
-            this.addressDataGridViewTextBoxColumn,
-            this.dateAddedDataGridViewTextBoxColumn,
-            this.invInfoDataGridViewTextBoxColumn,
-            this.addressDataGridViewTextBoxColumn1});
-            this.dataGridView1.DataSource = this.invoicesBindingSource;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(740, 522);
-            this.dataGridView1.TabIndex = 0;
+            this.columnHeader1.Text = "Work Order #";
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Bank ID";
+            this.columnHeader2.Width = 86;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Address";
+            this.columnHeader3.Width = 247;
+            // 
+            // invoicesBindingSource1
+            // 
+            this.invoicesBindingSource1.DataSource = typeof(SSHomeRestoration.Invoices);
             // 
             // invoicesBindingSource
             // 
             this.invoicesBindingSource.DataSource = typeof(SSHomeRestoration.Invoices);
             // 
-            // workOrderNumDataGridViewTextBoxColumn
+            // dataGridView1
             // 
-            this.workOrderNumDataGridViewTextBoxColumn.DataPropertyName = "workOrderNum";
-            this.workOrderNumDataGridViewTextBoxColumn.HeaderText = "workOrderNum";
-            this.workOrderNumDataGridViewTextBoxColumn.Name = "workOrderNumDataGridViewTextBoxColumn";
-            // 
-            // accountNumDataGridViewTextBoxColumn
-            // 
-            this.accountNumDataGridViewTextBoxColumn.DataPropertyName = "accountNum";
-            this.accountNumDataGridViewTextBoxColumn.HeaderText = "accountNum";
-            this.accountNumDataGridViewTextBoxColumn.Name = "accountNumDataGridViewTextBoxColumn";
-            // 
-            // bankIDDataGridViewTextBoxColumn
-            // 
-            this.bankIDDataGridViewTextBoxColumn.DataPropertyName = "bankID";
-            this.bankIDDataGridViewTextBoxColumn.HeaderText = "bankID";
-            this.bankIDDataGridViewTextBoxColumn.Name = "bankIDDataGridViewTextBoxColumn";
-            // 
-            // streetNameDataGridViewTextBoxColumn
-            // 
-            this.streetNameDataGridViewTextBoxColumn.DataPropertyName = "streetName";
-            this.streetNameDataGridViewTextBoxColumn.HeaderText = "streetName";
-            this.streetNameDataGridViewTextBoxColumn.Name = "streetNameDataGridViewTextBoxColumn";
-            // 
-            // cityNameDataGridViewTextBoxColumn
-            // 
-            this.cityNameDataGridViewTextBoxColumn.DataPropertyName = "cityName";
-            this.cityNameDataGridViewTextBoxColumn.HeaderText = "cityName";
-            this.cityNameDataGridViewTextBoxColumn.Name = "cityNameDataGridViewTextBoxColumn";
-            // 
-            // stateNameDataGridViewTextBoxColumn
-            // 
-            this.stateNameDataGridViewTextBoxColumn.DataPropertyName = "stateName";
-            this.stateNameDataGridViewTextBoxColumn.HeaderText = "stateName";
-            this.stateNameDataGridViewTextBoxColumn.Name = "stateNameDataGridViewTextBoxColumn";
-            // 
-            // zipCodeDataGridViewTextBoxColumn
-            // 
-            this.zipCodeDataGridViewTextBoxColumn.DataPropertyName = "zipCode";
-            this.zipCodeDataGridViewTextBoxColumn.HeaderText = "zipCode";
-            this.zipCodeDataGridViewTextBoxColumn.Name = "zipCodeDataGridViewTextBoxColumn";
-            // 
-            // workCompletedDataGridViewTextBoxColumn
-            // 
-            this.workCompletedDataGridViewTextBoxColumn.DataPropertyName = "workCompleted";
-            this.workCompletedDataGridViewTextBoxColumn.HeaderText = "workCompleted";
-            this.workCompletedDataGridViewTextBoxColumn.Name = "workCompletedDataGridViewTextBoxColumn";
-            // 
-            // addressDataGridViewTextBoxColumn
-            // 
-            this.addressDataGridViewTextBoxColumn.DataPropertyName = "address";
-            this.addressDataGridViewTextBoxColumn.HeaderText = "address";
-            this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
-            // 
-            // dateAddedDataGridViewTextBoxColumn
-            // 
-            this.dateAddedDataGridViewTextBoxColumn.DataPropertyName = "dateAdded";
-            this.dateAddedDataGridViewTextBoxColumn.HeaderText = "dateAdded";
-            this.dateAddedDataGridViewTextBoxColumn.Name = "dateAddedDataGridViewTextBoxColumn";
-            // 
-            // invInfoDataGridViewTextBoxColumn
-            // 
-            this.invInfoDataGridViewTextBoxColumn.DataPropertyName = "invInfo";
-            this.invInfoDataGridViewTextBoxColumn.HeaderText = "invInfo";
-            this.invInfoDataGridViewTextBoxColumn.Name = "invInfoDataGridViewTextBoxColumn";
-            // 
-            // addressDataGridViewTextBoxColumn1
-            // 
-            this.addressDataGridViewTextBoxColumn1.DataPropertyName = "Address";
-            this.addressDataGridViewTextBoxColumn1.HeaderText = "Address";
-            this.addressDataGridViewTextBoxColumn1.Name = "addressDataGridViewTextBoxColumn1";
-            this.addressDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(740, 471);
+            this.dataGridView1.TabIndex = 0;
             // 
             // WeeklyInvoiceGenerator
             // 
@@ -228,8 +156,9 @@
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.invoicesBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.invoicesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -241,20 +170,12 @@
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem closeToolStripMenuItem;
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn workOrderNumDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn accountNumDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn bankIDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn streetNameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cityNameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn stateNameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn zipCodeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn workCompletedDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn addressDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dateAddedDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn invInfoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn addressDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.ListView weeklyInvoiceView;
         private System.Windows.Forms.BindingSource invoicesBindingSource;
+        private System.Windows.Forms.BindingSource invoicesBindingSource1;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

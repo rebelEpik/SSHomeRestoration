@@ -60,6 +60,9 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="GemBox.Spreadsheet, Version=41.3.30.1136, Culture=neutral, PublicKeyToken=b1b72c69714d4847, processorArchitecture=MSIL">
+      <HintPath>..\packages\GemBox.Spreadsheet.41.3.30.1136\lib\net30\GemBox.Spreadsheet.dll</HintPath>
+    </Reference>
     <Reference Include="GenericParsing, Version=1.1.5.29274, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\GenericParser.1.1.5\lib\net20\GenericParsing.dll</HintPath>
     </Reference>
@@ -352,6 +355,7 @@
     <Reference Include="System.Management" />
     <Reference Include="System.Runtime" />
     <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
